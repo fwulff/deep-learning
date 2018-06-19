@@ -6,32 +6,68 @@ There are also notebooks used as projects for the Nanodegree program. In the pro
 
 ## Table Of Contents
 
-### Tutorials
-
-* [Sentiment Analysis with Numpy](https://github.com/udacity/deep-learning/tree/master/sentiment-network): [Andrew Trask](http://iamtrask.github.io/) leads you through building a sentiment analysis model, predicting if some text is positive or negative.
-* [Intro to TensorFlow](https://github.com/udacity/deep-learning/tree/master/intro-to-tensorflow): Starting building neural networks with Tensorflow.
-* [Weight Intialization](https://github.com/udacity/deep-learning/tree/master/weight-initialization): Explore how initializing network weights affects performance.
-* [Autoencoders](https://github.com/udacity/deep-learning/tree/master/autoencoder): Build models for image compression and denoising, using feed-forward and convolution networks in TensorFlow.
-* [Transfer Learning (ConvNet)](https://github.com/udacity/deep-learning/tree/master/transfer-learning). In practice, most people don't train their own large networkd on huge datasets, but use pretrained networks such as VGGnet. Here you'll use VGGnet to classify images of flowers without training a network on the images themselves.
-* [Intro to Recurrent Networks (Character-wise RNN)](https://github.com/udacity/deep-learning/tree/master/intro-to-rnns): Recurrent neural networks are able to use information about the sequence of data, such as the sequence of characters in text.
-* [Embeddings (Word2Vec)](https://github.com/udacity/deep-learning/tree/master/embeddings): Implement the Word2Vec model to find semantic representations of words for use in natural language processing.
-* [Sentiment Analysis RNN](https://github.com/udacity/deep-learning/tree/master/sentiment-rnn): Implement a recurrent neural network that can predict if a text sample is positive or negative.
-* [Tensorboard](https://github.com/udacity/deep-learning/tree/master/tensorboard): Use TensorBoard to visualize the network graph, as well as how parameters change through training.
-* [Reinforcement Learning (Q-Learning)](https://github.com/udacity/deep-learning/tree/master/reinforcement): Implement a deep Q-learning network to play a simple game from OpenAI Gym.
-* [Sequence to sequence](https://github.com/udacity/deep-learning/tree/master/seq2seq): Implement a sequence-to-sequence recurrent network.
-* [Batch normalization](https://github.com/udacity/deep-learning/tree/master/batch-norm): Learn how to improve training rates and network stability with batch normalizations.
-* [Generative Adversatial Network on MNIST](https://github.com/udacity/deep-learning/tree/master/gan_mnist): Train a simple generative adversarial network on the MNIST dataset.
-* [Deep Convolutional GAN (DCGAN)](https://github.com/udacity/deep-learning/tree/master/dcgan-svhn): Implement a DCGAN to generate new images based on the Street View House Numbers (SVHN) dataset.
-* [Intro to TFLearn](https://github.com/udacity/deep-learning/tree/master/intro-to-tflearn): A couple introductions to a high-level library for building neural networks.
 
 ### Projects
 
 * [Your First Neural Network](https://github.com/udacity/deep-learning/tree/master/first-neural-network): Implement a neural network in Numpy to predict bike rentals.
-* [Image classification](https://github.com/udacity/deep-learning/tree/master/image-classification): Build a convolutional neural network with TensorFlow to classify CIFAR-10 images.
+
+Learn neural networks basics, and build your first network with Python and Numpy. Use modern deep learning frameworks (Keras, TensorFlow) to build multi-layer neural networks, and analyze real data.
+
+![jpg](./first-neural-network/images/project1.jpg)
+
+![png](./first-neural-network/images/P1.png)
+
+* [Dog-Breed Classifier](https://github.com/udacity/deep-learning/tree/master/dog-project): Design and train a convolutional neural network to analyze images of dogs and correctly identify their breeds.
+
+Learn how to build convolutional networks and use them to classify images (faces, melanomas, etc.) based on objects that appear in them. Use these networks to learn data compression and image denoising.
+
+```python
+img_path = './test_images/4.jpg'
+classify_image(img_path)
+```
+
+    Using image path ./test_images/4.jpg
+    Dog detected
+    64
+    ./test_images/4.jpg
+    Dear dog, predicted your breed as Entlebucher_mountain_dog for image None
+    
+
+![png](./dog-project/images/output_118_1.png)
+
+
 * [Text Generation](https://github.com/udacity/deep-learning/tree/master/tv-script-generation): Train a recurrent neural network on scripts from The Simpson's (copyright Fox) to generate new scripts.
-* [Machine Translation](https://github.com/udacity/deep-learning/tree/master/language-translation): Train a sequence to sequence network for English to French translation (on a simple dataset)
+
+Build your own recurrent networks and long short-term memory networks with Keras and TensorFlow; perform sentiment analysis and generate new text. Use recurrent networks to generate new text from TV scripts.
+
+```
+INFO:tensorflow:Restoring parameters from ./save
+moe_szyslak:(nods) what?
+homer_simpson:(to cat) i wish he'd cover ya, moe?
+moe_szyslak:(into phone) okay, i think you're talkin'.
+homer_simpson:(ominous) unable to move the midnight train to slab city.
+homer_simpson:(to moe) i need a little person?
+homer_simpson:(tough) oh, i don't know...
+homer_simpson:(to moe, disgusted) my thesaurus... now how did you say fat...(looks at thumb) oh, moe. i got a date with my mother's show?
+moe_szyslak:(into phone) there's an exit?
+moe_szyslak:(into phone) gotcha you a minute of silent prayer for talkin'.
+moe_szyslak:(into phone) okay, i think you want to commit a crime, homer?
+moe_szyslak:(into phone) okay, i think you could dump my keys?
+moe_szyslak:(to harv)
+
+
+moe_szyslak:(cutting him off) let's get it.
+moe_szyslak:(into phone) okay
+```
+
 * [Face Generation](https://github.com/udacity/deep-learning/tree/master/face_generation): Use a DCGAN on the CelebA dataset to generate images of novel and realistic human faces.
 
+Build a pair of Multi-Layer Neural Networks and make them compete against each other in order to generate MNIST numbers or realistic faces.
+Learn to understand and implement the DCGAN model to simulate realistic images with GANS (generative adversarial networks).
+
+![png](./face_generation/images/MNIST.png)
+
+![png](./face_generation/images/GAN_faces_final.png)
 
 ## Dependencies
 
