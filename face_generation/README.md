@@ -4,6 +4,6 @@
 Build a pair of Multi-Layer Neural Networks and make them compete against each other in order to generate MNIST numbers or realistic faces.
 Learn to understand and implement the DCGAN model to simulate realistic images with GANS (generative adversarial networks).
 
-![png](./face_generation/images/MNIST.png)
+![png](./images/MNIST.png)
 
-![png](./face_generation/images/GAN_faces_final.png)
+![png](./images/GAN_faces_final.png)
